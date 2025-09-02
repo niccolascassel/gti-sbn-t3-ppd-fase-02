@@ -1,0 +1,132 @@
+{
+  "sample_01": {
+    "q1_percentages": {
+      "gratuito_percentual": 5.0,
+      "pago_percentual": 95.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2020 ]
+    },
+    "q3_top_genre": {
+      "genre": [ "Action", "Racing", "Simulation" ],
+      "average_recommendations": 1831.0
+    }
+  },
+  "sample_02": {
+    "q1_percentages": {
+      "gratuito_percentual": 10.0,
+      "pago_percentual": 90.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2019, 2020, 2022 ]
+    },
+    "q3_top_genre": {
+      "genre": [ "Action", "Adventure" ],
+      "average_recommendations": 17074.5
+    }
+  },
+  "sample_03": {
+    "q1_percentages": {
+      "gratuito_percentual": 15.0,
+      "pago_percentual": 85.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2021 ]
+    },
+    "q3_top_genre": {
+      "genre": [],
+      "average_recommendations": 0.0
+    }
+  },
+  "sample_04": {
+    "q1_percentages": {
+      "gratuito_percentual": 20.0,
+      "pago_percentual": 80.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2023 ]
+    },
+    "q3_top_genre": {
+      "genre": [],
+      "average_recommendations": 0.0
+    }
+  },
+  "sample_05": {
+    "q1_percentages": {
+      "gratuito_percentual": 10.0,
+      "pago_percentual": 90.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2018 ]
+    },
+    "q3_top_genre": {
+      "genre": [ "Strategy" ],
+      "average_recommendations": 6082.0
+    }
+  },
+  "sample_06": {
+    "q1_percentages": {
+      "gratuito_percentual": 10.0,
+      "pago_percentual": 90.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2021 ]
+    },
+    "q3_top_genre": {
+      "genre": [ "Action", "Adventure", "Massively Multiplayer", "Early Access" ],
+      "average_recommendations": 1255.0
+    }
+  },
+  "sample_07": {
+    "q1_percentages": {
+      "gratuito_percentual": 10.0,
+      "pago_percentual": 90.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2021 ]
+    },
+    "q3_top_genre": {
+      "genre": [ "Adventure", "Casual", "Indie" ],
+      "average_recommendations": 1020.0
+    }
+  },
+  "sample_08": {
+    "q1_percentages": {
+      "gratuito_percentual": 35.0,
+      "pago_percentual": 65.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2022 ]
+    },
+    "q3_top_genre": {
+      "genre": [],
+      "average_recommendations": 0.0
+    }
+  },
+  "sample_09": {
+    "q1_percentages": {
+      "gratuito_percentual": 15.0,
+      "pago_percentual": 85.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2020 ]
+    },
+    "q3_top_genre": {
+      "genre": [],
+      "average_recommendations": 0.0
+    }
+  },
+  "sample_10": {
+    "q1_percentages": {
+      "gratuito_percentual": 20.0,
+      "pago_percentual": 80.0
+    },
+    "q2_most_games_year": {
+      "years": [ 2020 ]
+    },
+    "q3_top_genre": {
+      "genre": [ "Adventure" ],
+      "average_recommendations": 2280.0
+    }
+  }
+}
