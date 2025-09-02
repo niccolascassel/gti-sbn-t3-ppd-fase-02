@@ -101,8 +101,9 @@ O principal artefato da Fase II é o **Jupyter Notebook** que contém o relatór
 
 Para garantir a correção das funções de análise e pré-processamento, você pode rodar os testes unitários:
 
-```bash
-python -m unittest test_steam_analyzer.py
+	```bash
+	python -m unittest test_steam_analyzer.py
+	```
 
 ▶️ Como Utilizar o Script de Demonstração (main_analysis.py)
 Este script serve como um exemplo de como orquestrar os módulos de análise via linha de comando. Ele realiza uma pequena amostra das análises e gera alguns gráficos para demonstração.
@@ -113,6 +114,7 @@ Analisar o dataset completo (steam_games.csv):
     python main_analysis.py -s full
     # ou
     python main_analysis.py --sample full
+	```
 	
 Analisar uma amostra específica (steam_games_sample_XX.csv): Substitua ID_DA_AMOSTRA por um número de 1 a 10. Por exemplo, para steam_games_sample_05.csv:
 
@@ -120,11 +122,13 @@ Analisar uma amostra específica (steam_games_sample_XX.csv): Substitua ID_DA_AM
     python main_analysis.py -s 5
 	# ou
 	python main_analysis.py --sample 05
+	```
 
 Analisar o dataset completo (comportamento padrão): Se nenhum argumento for fornecido, a análise será executada para o dataset completo.
 
 	```bash
 	python main_analysis.py
+	```
 	
 Mostrar Ajuda: Para ver as opções de uso e uma descrição detalhada:
 
@@ -132,6 +136,7 @@ Mostrar Ajuda: Para ver as opções de uso e uma descrição detalhada:
 	python main_analysis.py -h
 	# ou
 	python main_analysis.py --help
+	```
 	
 🖼️ Saída dos Gráficos
 Após a execução do relatorio_analise.ipynb ou do main_analysis.py, os gráficos gerados serão salvos no diretório data/plots/ como arquivos .png.
