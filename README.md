@@ -101,8 +101,8 @@ O principal artefato da Fase II é o **Jupyter Notebook** que contém o relatór
 
 Para garantir a correção das funções de análise e pré-processamento, você pode rodar os testes unitários:
 
-    ```bash
-	python -m unittest test_steam_analyzer.py
+	```bash
+    python -m unittest test_steam_analyzer.py
     ```
 
 ▶️ Como Utilizar o Script de Demonstração (main_analysis.py)
