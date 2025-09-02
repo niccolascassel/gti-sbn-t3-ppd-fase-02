@@ -138,7 +138,8 @@ Este script serve como um exemplo de como orquestrar os módulos de análise via
 	python main_analysis.py --help
     ```
 	
-🖼️ Saída dos Gráficos
+🖼️ Saída dos Gráficos:
+
 Após a execução do relatorio_analise.ipynb ou do main_analysis.py, os gráficos gerados serão salvos no diretório data/plots/ como arquivos .png.
 
 📁 Estrutura do Projeto
