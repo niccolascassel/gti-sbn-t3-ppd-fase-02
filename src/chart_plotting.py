@@ -246,11 +246,10 @@ class ChartGenerator:
         ax1.set_xticklabels(genres, rotation=45, ha='right', fontsize=plt.rcParams['xtick.labelsize'])
         
         ax2 = ax1.twinx()
-        rects2 = ax2.bar(x + width/2, avg_total_recommendations, width, label='Média de Recomendações', color=self.colors[7])
+        rects2 = ax2.bar(analysis_data['genre'], analysis_data['avg_total_recommendations'], color=self.colors[7], alpha=0.6, width=0.4, align='edge', label='Média de Recomendações')
         ax2.set_ylabel('Média de Recomendações', color=self.colors[7], fontsize=plt.rcParams['axes.labelsize'])
         ax2.tick_params(axis='y', labelcolor=self.colors[7])
-        ax2.set_yticks(fontsize=plt.rcParams['ytick.labelsize'])
-        
+
         fig.suptitle(f'Preço Médio vs. Média de Recomendações por Gênero (Jogos Pós-2019) - {title_suffix}', fontsize=plt.rcParams['figure.titlesize'])
         
         lines, labels = ax1.get_legend_handles_labels()

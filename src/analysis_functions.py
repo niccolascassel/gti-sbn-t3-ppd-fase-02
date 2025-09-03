@@ -30,7 +30,7 @@ def get_top_10_metacritic_games(df: pd.DataFrame) -> pd.DataFrame:
     ).head(10)
 
     # Seleciona as colunas mais relevantes para exibição
-    return top_games[['name', 'metacritic_score', 'release_date', 'publisher', 'developer']]
+    return top_games[['name', 'metacritic_score', 'release_date', 'publishers', 'developers']]
 
 def analyze_role_playing_games_metrics(df: pd.DataFrame) -> dict:
     """
@@ -98,27 +98,27 @@ def analyze_top_paid_game_publishers(df: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame: DataFrame com as 5 principais editoras, contagem de jogos pagos,
                       e média/mediana de avaliações positivas.
     """
-    # Garante que 'price' é numérico e 'publisher' é string
+    # Garante que 'price' é numérico e 'publishers' é string
     df_filtered = df.copy()
     df_filtered['price'] = pd.to_numeric(df_filtered['price'], errors='coerce')
-    df_filtered['publisher'] = df_filtered['publisher'].astype(str).fillna('Desconhecido')
+    df_filtered['publishers'] = df_filtered['publishers'].astype(str).fillna('Desconhecido')
     df_filtered['positive_reviews'] = pd.to_numeric(df_filtered['positive_reviews'], errors='coerce')
     
     paid_games = df_filtered[(df_filtered['price'] > 0) & (df_filtered['price'].notna())].copy()
 
     if paid_games.empty:
-        return pd.DataFrame(columns=['publisher', 'num_paid_games', 'avg_positive_reviews', 'median_positive_reviews'])
+        return pd.DataFrame(columns=['publishers', 'num_paid_games', 'avg_positive_reviews', 'median_positive_reviews'])
 
-    top_publishers = paid_games['publisher'].value_counts().nlargest(5).index.tolist()
+    top_publishers = paid_games['publishers'].value_counts().nlargest(5).index.tolist()
 
     results = []
     for publisher in top_publishers:
-        publisher_games = paid_games[paid_games['publisher'] == publisher]
+        publisher_games = paid_games[paid_games['publishers'] == publisher]
         num_paid_games = len(publisher_games)
         avg_positive = publisher_games['positive_reviews'].mean()
         median_positive = publisher_games['positive_reviews'].median()
         results.append({
-            'publisher': publisher,
+            'publishers': publisher,
             'num_paid_games': num_paid_games,
             'avg_positive_reviews': avg_positive,
             'median_positive_reviews': median_positive
